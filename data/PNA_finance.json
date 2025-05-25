@@ -1,0 +1,539 @@
+[
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Authenticate the user via OTP, analyze tech sector sentiment, and place a buy order for AAPL if sentiment is positive. Adjust stop-loss if high volatility is detected.",
+        "sequence_of_tool_calls": [
+            "send_otp(user123)",
+            "verify_otp(user123, '452891')",
+            "analyze_market_sentiment('Technology')",
+            "forecast_price_movement('AAPL', true)",
+            "place_order('buy', 'AAPL', 100)",
+            "identify_sector_volatility('Technology')",
+            "adjust_stop_loss('AAPL', 165.00)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Verify the user with biometrics, analyze login behavior for anomalies, and log the result. Then evaluate portfolio risk and generate alerts for volatile stocks.",
+        "sequence_of_tool_calls": [
+            "verify_biometric('user456')",
+            "analyze_login_behavior()",
+            "detect_anomalous_login('New York', false)",
+            "evaluate_risk_exposure('portfolio_XYZ')",
+            "generate_risk_alert('TSLA', 5.0)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Authenticate the user using KYC for a high-risk transaction, summarize the latest earnings report from Microsoft, and log the trade activity.",
+        "sequence_of_tool_calls": [
+            "verify_kyc_documents('user789', true)",
+            "summarize_earnings_report('Microsoft', 'Q1 2025')",
+            "log_trade_activity('user789', 'Reviewed earnings and initiated position')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Send and verify OTP for a user, forecast price movement of AMZN using sentiment, and place a sell order if sentiment is bearish.",
+        "sequence_of_tool_calls": [
+            "send_otp('user999')",
+            "verify_otp('user999', '773219')",
+            "forecast_price_movement('AMZN', true)",
+            "place_order('sell', 'AMZN', 50)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Check order status, adjust stop-loss for META to a safer threshold, and evaluate portfolio risk again.",
+        "sequence_of_tool_calls": [
+            "check_order_status('ORD1023')",
+            "adjust_stop_loss('META', 280.00)",
+            "evaluate_risk_exposure('portfolio_XYZ')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Detect login anomalies with biometric mismatch and verify OTP if needed. Then log the event and prevent further trading.",
+        "sequence_of_tool_calls": [
+            "detect_anomalous_login('Paris', true)",
+            "send_otp('user321')",
+            "verify_otp('user321', '231455')",
+            "log_risk_event('Login Alert', 'IAM Module')",
+            "cancel_order('ORD678')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Analyze market sentiment for the healthcare sector and fetch financial news using relevant keywords. Log this as trade research.",
+        "sequence_of_tool_calls": [
+            "analyze_market_sentiment('Healthcare')",
+            "fetch_financial_news('biotech, healthcare funding')",
+            "log_trade_activity('user555', 'Sector research complete')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Verify KYC documents, analyze stock trends for TSLA, and generate risk alert if price is too volatile.",
+        "sequence_of_tool_calls": [
+            "verify_kyc_documents('user101', false)",
+            "analyze_stock_trends('TSLA')",
+            "generate_risk_alert('TSLA', 7.5)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Send OTP, verify it, forecast GOOG price without sentiment, and place a buy order if trend is upward.",
+        "sequence_of_tool_calls": [
+            "send_otp('user998')",
+            "verify_otp('user998', '441277')",
+            "forecast_price_movement('GOOG', false)",
+            "place_order('buy', 'GOOG', 30)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Evaluate current portfolio risk, adjust stop-loss for NVDA, and fetch recent news related to chip manufacturers.",
+        "sequence_of_tool_calls": [
+            "evaluate_risk_exposure('portfolio_N1')",
+            "adjust_stop_loss('NVDA', 600.00)",
+            "fetch_financial_news('semiconductors, chipmakers')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Verify biometric, analyze login behavior, and flag risk if access comes from unusual location with mismatch.",
+        "sequence_of_tool_calls": [
+            "verify_biometric('userMZ')",
+            "analyze_login_behavior()",
+            "detect_anomalous_login('Bangkok', true)",
+            "log_risk_event('Unusual Access Attempt', 'Login Module')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Send OTP to user, validate it, analyze financial news related to inflation, and log activity.",
+        "sequence_of_tool_calls": [
+            "send_otp('userIR')",
+            "verify_otp('userIR', '198342')",
+            "fetch_financial_news('inflation, CPI, Fed')",
+            "log_trade_activity('userIR', 'Reviewed macroeconomic news')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Summarize earnings report of Apple, analyze tech sector sentiment, and initiate a buy order if both are strong.",
+        "sequence_of_tool_calls": [
+            "summarize_earnings_report('Apple', 'Q2 2025')",
+            "analyze_market_sentiment('Technology')",
+            "place_order('buy', 'AAPL', 75)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Verify OTP for high-value trade, place buy order for MSFT, and log trade activity.",
+        "sequence_of_tool_calls": [
+            "send_otp('user777')",
+            "verify_otp('user777', '002345')",
+            "place_order('buy', 'MSFT', 100)",
+            "log_trade_activity('user777', 'Executed high-value MSFT buy order')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Detect login anomalies from a flagged location and adjust stop-loss on AAPL as precaution.",
+        "sequence_of_tool_calls": [
+            "detect_anomalous_login('Beijing', false)",
+            "adjust_stop_loss('AAPL', 172.50)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Cross-check risk exposure for two portfolios and log events accordingly.",
+        "sequence_of_tool_calls": [
+            "evaluate_risk_exposure('portfolio_A')",
+            "evaluate_risk_exposure('portfolio_B')",
+            "log_risk_event('Dual Portfolio Review', 'RiskOps')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Send OTP and verify it. Then place a large sell order for GOOGL and configure a risk alert.",
+        "sequence_of_tool_calls": [
+            "send_otp('userLX')",
+            "verify_otp('userLX', '567843')",
+            "place_order('sell', 'GOOGL', 200)",
+            "generate_risk_alert('GOOGL', 6.0)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Evaluate risk of current portfolio, summarize quarterly earnings of Meta, and log trade note.",
+        "sequence_of_tool_calls": [
+            "evaluate_risk_exposure('portfolioMeta')",
+            "summarize_earnings_report('Meta', 'Q4 2024')",
+            "log_trade_activity('userME', 'Meta earnings reviewed and risk noted')"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Analyze stock trends and sentiment for NVDA and place a buy order if positive. Adjust stop-loss as needed.",
+        "sequence_of_tool_calls": [
+            "analyze_stock_trends('NVDA')",
+            "analyze_market_sentiment('Technology')",
+            "forecast_price_movement('NVDA', true)",
+            "place_order('buy', 'NVDA', 80)",
+            "adjust_stop_loss('NVDA', 620.00)"
+        ]
+    },
+    {
+        "agents": [
+            {
+                "agent_name": "Identity Verification Agent",
+                "agent_description": "Uses biometric or OTP to verify customer identity during high-risk transactions."
+            },
+            {
+                "agent_name": "Market Analysis Agent",
+                "agent_description": "Continuously analyzes stock market trends, news, and sentiment to identify trading opportunities."
+            },
+            {
+                "agent_name": "Trade Execution Agent",
+                "agent_description": "Executes buy/sell orders based on predefined strategies and real-time market conditions."
+            },
+            {
+                "agent_name": "Risk Management Agent",
+                "agent_description": "Monitors exposure, adjusts stop-loss limits, and prevents excessive losses."
+            }
+        ],
+        "user_query": "Verify biometric and OTP for account recovery, then cancel a pending order and log action.",
+        "sequence_of_tool_calls": [
+            "verify_biometric('userRecover')",
+            "send_otp('userRecover')",
+            "verify_otp('userRecover', '110998')",
+            "cancel_order('ORD3210')",
+            "log_trade_activity('userRecover', 'Order cancelled during recovery process')"
+        ]
+    }
+]
