@@ -11,6 +11,7 @@ This repository contains the sample data (Finance domain), inference scripts and
 │   ├── RAS_finance_Coop.json
 │   ├── RAS_finance_DPI.json
 │   ├── RAS_finance_Imp.json
+│   ├── RAS_finance_IPI.json
 │   ├── tools_identity_verification_agent.py
 │   ├── tools_market_analysis_agent.py
 │   ├── tools_risk_management_agent.py
@@ -38,3 +39,21 @@ This repository contains the sample data (Finance domain), inference scripts and
 ```RAS_finance_DPI.json``` contains the datapoints for evaluating DPI attack.
 
 ```RAS_finance_Imp.json``` contains the datapoints for evaluating Impersonation attack.
+
+```RAS_finance_IPI.json``` contains the datapoints for evaluating IPI attack.
+
+The rest of the files under ```data``` are tools for each of the agents.
+
+```eval_scripts``` contains eval scripts for each of the attack kinds.
+
+```inference_scripts``` contains scripts used for inferencing the agentic system in different configurations.
+
+## Setup and Requirements
+
+### Prerequisites
+
+For running the eval scripts, you need to have openai API keys.
+
+For running the inference scripts, you need to have APIs for the models you are inferencing.
+
+Place the API key in the script and run it using ```python3 ${filename}.py```.
