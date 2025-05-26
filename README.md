@@ -29,7 +29,7 @@ This repository contains the sample data (Finance domain), inference scripts and
 │   └── trapi_gemini_swarm.py
 └── README.md
 ```
-- ```data``` contains all the files for agent descriptions and tool corresponding to the agent.
+- ```data``` contains all the files for agent descriptions and tools corresponding to the agents.
   - ```PNA_finance.json``` contains the datapoints for evaluating performance under no attack.
 
   - ```RAS_finance_contra.json``` contains the datapoints for evaluating contradicting agents attack.
