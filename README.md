@@ -1,6 +1,6 @@
 # United They Fall: Investigating Security Risks in Multi-Agent LLM Systems
 
-This repository contains the sample data (Finance domain), inference scripts and evaluation scripts used for conducting studies mentioned in the paper.
+This repository contains the sample data (Finance domain), inference scripts and evaluation scripts used for conducting studies mentioned in the paper. We will release the complete dataset upon acceptance of the paper.
 
 ## Project structure
 ```
@@ -29,31 +29,36 @@ This repository contains the sample data (Finance domain), inference scripts and
 │   └── trapi_gemini_swarm.py
 └── README.md
 ```
+- ```data``` contains all the files for agent descriptions and tool corresponding to the agent.
+  - ```PNA_finance.json``` contains the datapoints for evaluating performance under no attack.
 
-```PNA_finance.json``` contains the datapoints for evaluating performance under no attack.
+  - ```RAS_finance_contra.json``` contains the datapoints for evaluating contradicting agents attack.
 
-```RAS_finance_contra.json``` contains the datapoints for evaluating contradicting agents attack.
+  - ```RAS_finance_Coop.json``` contains the datapoints for evaluating colluding agents attack.
 
-```RAS_finance_Coop.json``` contains the datapoints for evaluating colluding agents attack.
+  - ```RAS_finance_DPI.json``` contains the datapoints for evaluating DPI attack.
 
-```RAS_finance_DPI.json``` contains the datapoints for evaluating DPI attack.
+  - ```RAS_finance_Imp.json``` contains the datapoints for evaluating Impersonation attack.
 
-```RAS_finance_Imp.json``` contains the datapoints for evaluating Impersonation attack.
+  - ```RAS_finance_IPI.json``` contains the datapoints for evaluating IPI attack.
 
-```RAS_finance_IPI.json``` contains the datapoints for evaluating IPI attack.
+  - The rest of the files under ```data``` are tools for each of the agents.
 
-The rest of the files under ```data``` are tools for each of the agents.
+- ```eval_scripts``` contains eval scripts for each of the attack types.
 
-```eval_scripts``` contains eval scripts for each of the attack kinds.
-
-```inference_scripts``` contains scripts used for inferencing the agentic system in different configurations.
+- ```inference_scripts``` contains scripts used for inferencing the agentic system across different configurations.
 
 ## Setup and Requirements
 
 ### Prerequisites
 
-For running the eval scripts, you need to have openai API keys.
+API keys are needed to run the eval scripts. 
 
-For running the inference scripts, you need to have APIs for the models you are inferencing.
+We use GPT-4o for ARIA evaluations. For reproducing the results, an OpenAI API key is needed.
 
-Place the API key in the script and run it using ```python3 ${filename}.py```.
+```Autogen``` library needs to be installed on your system.
+
+## Evaluation
+
+For evaluation, you can run the script using ```python3 eval_gemini.py```.
+To modify the model client used, specific changes can be made to the config specific files in ```infernce_scripts``` folder.
