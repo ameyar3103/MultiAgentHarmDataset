@@ -52,7 +52,7 @@ This repository contains the sample data (Finance domain), inference scripts and
 
 ### Prerequisites
 
-API keys are needed to run the eval scripts. 
+OpenAI and Gemini API keys are needed to run the eval scripts. 
 
 We use GPT-4o for ARIA evaluations. For reproducing the results, an OpenAI API key is needed.
 
