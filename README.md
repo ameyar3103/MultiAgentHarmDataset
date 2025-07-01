@@ -1,4 +1,4 @@
-# United They Fall: Investigating Security Risks in Multi-Agent LLM Systems
+# TAMAS: A Dataset for Investigating Security Risks in Multi-Agent LLM Systems
 
 This repository contains the sample data (Finance domain), inference scripts and evaluation scripts used for conducting studies mentioned in the paper. We will release the complete dataset upon acceptance of the paper.
 
